@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>项目信息</title>
+</head>
+<body>
+    <div>
+        <h1>项目信息</h1>
+        <table border="1"  cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>客户名称</th>
+                    <th>项目名称</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for pj in pj_list %}
+                    <tr>
+                        <td>{{ pj.customer }}</td>
+                        <td>{{ pj.projectName }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+
+</body>
+</html>
